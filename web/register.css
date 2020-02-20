@@ -1,0 +1,158 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 20, 2020, 2:21:33 PM
+    Author     : nibu
+*/
+
+/* Check out the navigation section. It's the most important part. */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: aquamarine;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay h1 {
+  font-size: 65px;
+  letter-spacing: 2px;
+  margin: 0 0 5px;
+}
+
+.overlay p {
+  margin: 0;
+  font-size: 26px;
+}
+
+.motto {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 800px;
+}
+
+.services {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 800px;
+}
+
+.row {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+/*footer {
+  background: azure;
+  color: white;
+  text-align: center;
+  padding: 60px;
+}*/
+
+#vids {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#vids a:first-of-type {
+  margin-bottom: 5px;
+}
+
+/**
+* Navigation
+*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  transition: all ease .65s;
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  line-height: 60px;
+}
+.navbar.nav{
+    text-align: center
+}
+
+/*span {
+  font-size: 24px;
+  margin-left: 10px;
+}*/
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin-right: 15px;
+  text-align: center;
+ 
+}
+
+/**
+* Scrolling CSS
+*/
+
+nav.scroll {
+  padding: 10px;
+  background: #262626;
+  position: fixed;
+}
+
+nav.scroll span {
+  font-size: 18px;
+  color: gray;
+}
+
+nav.scroll li {
+  color: red;
+}
+
+.form-container {
+    position: absolute;
+    top: 20vh;
+ border: #fff;
+ padding: 30px;
+ border-radius: 10px;
+ box-shadow: 0px 0px 10px 0px #262626;
+}
+
