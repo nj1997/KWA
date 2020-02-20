@@ -62,7 +62,7 @@ public class login extends HttpServlet {
                    out.println("success");
                }else
                {
-                    out.println("failed");
+                    out.println("faile");
                }
               
               }
