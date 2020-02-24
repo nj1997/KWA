@@ -1,6 +1,6 @@
 <%-- 
-    Document   : searchviewcusto
-    Created on : Feb 4, 2020, 11:54:15 PM
+    Document   : ip_view
+    Created on : Feb 24, 2020, 1:47:48 PM
     Author     : nibu
 --%>
 
@@ -12,22 +12,50 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-           <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="ViewIp" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>  
+        
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+              <div class="container">
+                  <img style="width: 30%" src="../../img/Banner_Ed1 (1).gif">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      
+       <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>  
+    </ul>
+  </div>
+    </div>
+  </nav>
+        
+        <form class="form-control">
             <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">Registration Id</th>
-      <th scope="col">Name</th>
-      <th scope="col">Ration Card Number</th>
       <th scope="col">Mobile Number</th>
-        <th scope="col">Registration Date</th>
+      <th scope="col">Date</th>
+     
     </tr>
   </thead>
 
@@ -43,7 +71,7 @@
                         if ((count % 2) == 0) {
                             color = "#eeffee";
                         }
-                        count++;
+                        count++;        
                         ArrayList pList = (ArrayList) itr.next();
             %>
             <tr style="background-color:<%=color%>;">
@@ -69,5 +97,12 @@
             <%            }
             %>
         </table>
+        </form>
+        <style>
+            .form-control{
+                padding-top: 90px;
+                
+            }
+        </style>
     </body>
 </html>

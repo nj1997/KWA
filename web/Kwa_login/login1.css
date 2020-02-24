@@ -31,3 +31,12 @@ btn-primary{
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.field-icon {
+  float: right;
+  margin-right: 8px;
+  margin-top: -23px;
+  position: relative;
+  z-index: 2;
+  cursor:pointer;
+}

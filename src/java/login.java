@@ -2,6 +2,8 @@
 
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
+import static com.sun.org.apache.xpath.internal.axes.HasPositionalPredChecker.check;
+import static com.sun.tools.xjc.reader.xmlschema.parser.SchemaConstraintChecker.check;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.DriverManager;
@@ -26,6 +28,7 @@ public class login extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             String _username =request.getParameter("username");
             String _password=request.getParameter("password");
+            String check = request.getParameter("ex1");
    
             
           try
@@ -71,6 +74,7 @@ public class login extends HttpServlet {
               out.println("Exception :"+ex.getMessage());
           }
     }
+       
     }
 
 
